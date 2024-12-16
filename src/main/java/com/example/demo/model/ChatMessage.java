@@ -15,5 +15,5 @@ import java.io.Serializable;
 public class ChatMessage implements Serializable {
 
     private String message;
-    private String username;
+    private String userId;
 }
