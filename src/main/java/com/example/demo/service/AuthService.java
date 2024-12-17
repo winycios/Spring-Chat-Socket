@@ -44,7 +44,7 @@ public class AuthService {
 
         String token = jwtUtil.generateToken(email);
 
-        return new LoginResponseDto(user.getId(), user.getEmail(), token, user.getImg());
+        return new LoginResponseDto(user.getId(), user.getUsername(), token, user.getImg());
     }
 
     private void authenticateUser(String email, String password) {
